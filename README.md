@@ -1,16 +1,18 @@
-# Mintel Helm repository
+# Application Helm charts
 
-Mintel application Helm Charts for Kubernetes [Helm](https://helm.sh/).
+Kubernetes application charts in OpenBrand's GitHub organization.
+
+This is an infrastructure fork, not an OpenBrand product or customer API. The upstream project is [mintel/helm-charts](https://github.com/mintel/helm-charts); upstream names and distribution URLs below are retained for attribution and compatibility. The repository does not establish an OpenBrand-hosted chart registry.
 
 ## Usage
 
-### Adding Mintel Charts Repo
+### Adding the upstream chart repository
 
 ```sh
 helm repo add mintel https://mintel.github.io/helm-charts
 ```
 
-### Searching Mintel Charts
+### Searching upstream charts
 
 ```sh
 helm search repo mintel --devel
@@ -21,7 +23,7 @@ NAME              			CHART VERSION	APP VERSION	DESCRIPTION
 mintel/standard-application-stack	0.1.0-rc1    	     		Mintel Standard Application Stack
 ```
 
-**Note**: At Mintel, we handle consume these using [Tanka](https://tanka.dev/helm) which is our primary means of templating Kubernetes manifests.
+**Upstream note:** The original project uses [Tanka](https://tanka.dev/helm) to template Kubernetes manifests.
 
 ### Contributing
 
